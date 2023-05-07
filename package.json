@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-components",
+  "version": "1.0.0",
+  "description": "reusable components for freelance work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jchukwuezi/tailwind-components.git"
+  },
+  "author": "Joshua Chukwuezi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jchukwuezi/tailwind-components/issues"
+  },
+  "homepage": "https://github.com/jchukwuezi/tailwind-components#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

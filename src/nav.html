@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Component</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+<body class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
+    <header class="bg-white">
+        <nav class="flex justify-between items-center w-[85%] mx-auto h-16">
+            <div class="">
+                <p alt="" class="w-16 font-bold"> Logo </p>
+            </div>
+
+            <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li> 
+                        <a href="#" class="hover:text-gray-500" > Nav Item 1</a>
+                    </li>
+
+                    <li> 
+                        <a href="#" class="hover:text-gray-500"> Nav Item 2</a>
+                    </li>
+
+                    <li> 
+                        <a href="#" class="hover:text-gray-500"> Nav Item 3</a>
+                    </li>
+
+                    <li> 
+                        <a href="#" class="hover:text-gray-500"> Nav Item 4</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <a class="bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-800" href="#">Call To Action</a>
+                <span onclick="toggleMenu(this)" class="iconify text-3xl cursor-pointer md:hidden" data-icon="ic:round-menu"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-12">
+        <h1 class="text-center text-3xl">
+            Navigation Bar Component
+        </h1>
+    </section>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+
+        const toggleMenu = (e) =>{
+            e.getAttribute("data-icon") === "ic:round-menu" 
+            ? e.setAttribute("data-icon", "ic:round-close")
+            : e.setAttribute("data-icon", "ic:round-menu")
+
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+</html>
